@@ -21,8 +21,9 @@ public class ClinicaApp {
 		Especialidade especialidade3 = new Especialidade();
 		Especialidade especialidade4 = new Especialidade();
 		Especialidade especialidade5 = new Especialidade();
-		PlanoDeSaude planoDeSaude1 = new PlanoDeSaude();
-		PlanoDeSaude planoDeSaude2 = new PlanoDeSaude();
+		PlanoDeSaude planoDeSaude1 = new PlanoDeSaude(null);
+		PlanoDeSaude planoDeSaude2 = new PlanoDeSaude(null);
+		PlanoDeSaude planoNovo = new PlanoDeSaude(null);
 		Endereco endereco1 = new Endereco();
 		Endereco endereco2 = new Endereco();
 		Medico medico1 = new Medico();
@@ -46,6 +47,9 @@ public class ClinicaApp {
 
 		planoDeSaude2.setOperadora("Unimed");
 		planoDeSaude2.setTipoDePlano("Ouro");
+		
+		planoNovo.setOperadora("Intermédica");
+		planoNovo.setTipoDePlano("Bronze");
 
 		// endereços
 		endereco1.setLogradouro("Rua Elton Silva");
